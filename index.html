@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Librería Online</h1>
+
+  <form id="formulario-cliente">
+    <h2>Datos del cliente</h2>
+    <input type="text" id="nombre" placeholder="Nombre completo" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <button type="submit">Confirmar datos</button>
+  </form>
+
+  <h2>Catálogo de libros</h2>
+  <div id="catalogo">
+    <div class="libro" data-id="1" data-nombre="El Principito" data-precio="1500">
+      <p>📘 El Principito - $1500</p>
+      <button class="agregar">Agregar al carrito</button>
+    </div>
+    <div class="libro" data-id="2" data-nombre="1984" data-precio="1800">
+      <p>📕 1984 - $1800</p>
+      <button class="agregar">Agregar al carrito</button>
+    </div>
+    <div class="libro" data-id="3" data-nombre="Cien años de soledad" data-precio="2000">
+      <p>📗 Cien años de soledad - $2000</p>
+      <button class="agregar">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <h2>Carrito de compras</h2>
+  <ul id="carrito"></ul>
+  <p>Total: $<span id="total">0</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
